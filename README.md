@@ -35,7 +35,12 @@
  ```
  sqlalchemy.url = 'postgresql://scott:tiger@localhost:5432/mydatabase'
  ```
- ###### Environment variable 'DATABASE_URL' will override this setting, if environment variable is set, just leave sqlalchemy.url unchange (DO NOT LEAVE IT BLANK)
+###### Environment variable 'DATABASE_URL' will override this setting, if environment variable is set, just leave sqlalchemy.url unchange (DO NOT LEAVE IT BLANK)
 
+  Do the db migration
+  
+  ```
+  alembic upgrade head
+  ```
 
 ## Deploy to Heroku
