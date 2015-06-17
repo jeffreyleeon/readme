@@ -2,25 +2,25 @@
 
 ### Requirements
 
-##### - python3.4
+ - python3.4
 
 ### Setup
 
-##### Install dependencies
+ Install dependencies
 ```
  pip install -r requirements
 ```
-##### Install python applications
+ Install python applications
 ```
  python setup.py install
 ```
 ##### Run application in localhost:6543 with gunicorn
 
-###### Development environment:
+ Development environment:
 ```
 > gunicorn --paste development.ini
 ```
-###### Production environment:
+ Production environment:
 ```
 > gunicorn --paste production.ini
 ```
