@@ -4,6 +4,18 @@
 
  - python3.4
 
+### Config
+
+####Environment Variables
+
+ - DATABASE_URL
+ - GITHUB_CLIENT_ID
+ - GITHUB_CLIENT_SECRET
+ - GITHUB_REDIRECT_URI
+ - TRELLO_API_KEY
+ - TRELLO_API_SECRET
+ - TRELLO_REDIRECT_URI
+
 ### Setup
 
  Install dependencies
@@ -14,7 +26,8 @@
 ```
  python setup.py install
 ```
- Initialize db (ONLY FOR THE FIRST TIME, May need to setting up db connection first)
+ Initialize db (ONLY FOR THE FIRST TIME, May need to setting up db connection
+ first)
 ```
  initialize_thub_db development.ini
 ```
@@ -33,24 +46,26 @@
 
  Setup your database and copy its url
  
- Change sqlalchemy.url in development.ini / production.ini / alembic.ini to that url
+ Change `sqlalchemy.url` in development.ini / production.ini / alembic.ini to 
+ that url
  
- For example:
- ```
- sqlalchemy.url = 'postgresql://scott:tiger@localhost:5432/mydatabase'
- ```
-###### Environment variable 'DATABASE_URL' will override this setting, if environment variable is set, just leave sqlalchemy.url unchange (BUT DO NOT LEAVE IT BLANK)
+ Run `createdb thub` for development env if you are using postgresql
+
+
+###### Environment variable `DATABASE_URL` will override the `sqlalchemy.url`.
 
   Do the db migration
   ```
   alembic upgrade head
   ```
+
 ## Deploy to Heroku
 
  Create an addon of heroku-postgresql
  ```
  heroku addons:create heroku-postgresql:hobby-dev
  ```
+
  Heroku will set the postgresql url path to environment variable 'DATABASE_URL'
  No need to change sqlalchemy.url in any .ini files
  
@@ -58,6 +73,7 @@
  ```
  web: gunicorn --paste production.ini -b :${PORT}
  ```
+
  Do the db migration:
  ```
  heroku run alembic upgrade head
