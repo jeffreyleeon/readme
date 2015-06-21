@@ -20,7 +20,9 @@ trello_api_key =
 trello_api_secret =
 trello_redirect_uri =
  ```
- According to [Absolute README link](https://github.com/username/repo/blob/branch/docs/more_words.md)
+ According to [Github Developer API](https://developer.github.com/v3/oauth/#redirect-urls),
+ the redirect URL’s HOST and PORT must exactly match the callback URL set in developer applications
+ Otherwise, it will us the redirect_url of the callback URL set in developer applications
  
 ### Setup
 
