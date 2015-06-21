@@ -20,6 +20,7 @@ trello_api_key =
 trello_api_secret =
 trello_redirect_uri =
  ```
+ According to [Absolute README link](https://github.com/username/repo/blob/branch/docs/more_words.md)
  
 ### Setup
 
