@@ -9,13 +9,18 @@
 ####Environment Variables
 
  - DATABASE_URL
- - GITHUB_CLIENT_ID
- - GITHUB_CLIENT_SECRET
- - GITHUB_REDIRECT_URI
- - TRELLO_API_KEY
- - TRELLO_API_SECRET
- - TRELLO_REDIRECT_URI
+ 
+ In development.ini / production.ini / alembic.ini, set followings
+ ```
+github_client_id =
+github_secret_id =
+github_redirect_uri =
 
+trello_api_key =
+trello_api_secret =
+trello_redirect_uri =
+ ```
+ 
 ### Setup
 
  Install dependencies
@@ -78,4 +83,3 @@
  ```
  heroku run alembic upgrade head
  ```
- 
