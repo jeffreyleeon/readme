@@ -10,7 +10,7 @@
 
  - DATABASE_URL
  
- - In development.ini / production.ini / alembic.ini, set followings
+ - In development.ini / production.ini, set followings
  ```
 github_client_id =
 github_secret_id =
