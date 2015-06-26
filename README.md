@@ -21,6 +21,6 @@
 
  - Base View
   - Fish_demo.png
-   - A fish image that the player sees
+    - A fish image that the player sees
   - tempDrawImage
-   - A UIImageView with class BitDrawImageView
+    - A UIImageView with class BitDrawImageView
