@@ -24,3 +24,9 @@
     - A fish image that the player sees
   - tempDrawImage
     - A UIImageView with class BitDrawImageView
+  - Display View and Linear Interp View
+    - Linear Interp View
+      - A UIView with class LinearInterpView to capture ONE CYCLE of drawing line
+      
+        ONE CYCLE starts with touchesBegan, ends with touchesEnded
+
