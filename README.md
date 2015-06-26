@@ -4,12 +4,12 @@
 
  - There are two drawing types: BitDrawType and SmoothDrawType
 
- - BitDrawType uses CGContext method to draw pixelized points
-   In this project, drawing logic is in BitDrawImageView class
+ - BitDrawType uses CGContext method to draw pixelized points\n
+   In this project, drawing logic is in BitDrawImageView class\n
    Respective IBOutlet is tempDrawImage
 
- - SmoothDrawType uses UIBezierPath class to draw smooth lines
-   In this project, drawing logic is in LinearInterpView class
+ - SmoothDrawType uses UIBezierPath class to draw smooth lines\n
+   In this project, drawing logic is in LinearInterpView class\n
    Respective IBOutlet is drawingView
 
 ### Views Hierarchy
