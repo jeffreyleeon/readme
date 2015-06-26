@@ -24,9 +24,22 @@
     - A fish image that the player sees
   - tempDrawImage
     - A UIImageView with class BitDrawImageView
-  - Display View and Linear Interp View
+  - Displaying View and Linear Interp View
     - Linear Interp View
       - A UIView with class LinearInterpView to capture ONE CYCLE of drawing line
       
         ONE CYCLE starts with touchesBegan, ends with touchesEnded
 
+        After the cycle and screen capture, the new line doesn't exists in Linear Interp View. It exists in Displaying View
+    - Displaying View
+      - When Linear Interp View finishes its cycle, Linear Interp View will call the following delegate function
+      ```
+      @protocol LinearInterpViewDelegate
+
+      - (void) setImageViewForDisplay;
+
+      @end
+      ```
+      - Base View will run the delegate function to capture current drawings
+      
+        And then set the screen capture to Displaying View for 'remembering' previous drawn lines
