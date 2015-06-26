@@ -44,4 +44,10 @@
       
         And then set the screen capture to Displaying View for 'remembering' previous drawn lines
         
- #### View Precautions
+ #### Views Precautions
+ 
+  - All the above views must have same width and height
+  - Base View must have Linear Interp View's delegate function
+  - Base View's background color must not be [UIColor clearColor]
+  - If it is now BitDrawType, Displaying View and Linear Interp View will be hidden
+  - If it is now SmoothDrawType, tempDrawImage will be hidden
