@@ -43,3 +43,5 @@
       - Base View will run the delegate function to capture current drawings
       
         And then set the screen capture to Displaying View for 'remembering' previous drawn lines
+        
+ #### View Precautions
