@@ -62,3 +62,7 @@ Example:
 [ValidPointsController getBitmapValFromColumn: sectionPoint.x andRow: sectionPoint.y];
 ```
 - The sectionPoint must be mapped to scale up to the dimension of the BITMAP, as Fish_demo.png may not be displaying as the same width and height of the BITMAP
+- BITMAP image is set in ValidPointsController.m
+```
+bitmapImage = [UIImage imageNamed: @"fish_demo_bit.png"];
+```
