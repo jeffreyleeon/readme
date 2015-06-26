@@ -51,3 +51,14 @@
   - Base View's background color must not be [UIColor clearColor]
   - If it is now BitDrawType, Displaying View and Linear Interp View will be hidden
   - If it is now SmoothDrawType, tempDrawImage will be hidden
+ 
+### Drawing Determination
+
+- ValidPointsController is used to determine whether or not allowing user to draw on a particular point
+```
++ (int) getBitmapValFromColumn: (int) col andRow: (int) row;
+
+Example:
+[ValidPointsController getBitmapValFromColumn: sectionPoint.x andRow: sectionPoint.y];
+```
+- The sectionPoint must be mapped to scale up to the dimension of the BITMAP, as Fish_demo.png may not be displaying as the same width and height of the BITMAP
