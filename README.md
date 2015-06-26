@@ -18,3 +18,9 @@
 
 ### Views Hierarchy
 ![alt tag](http://oi57.tinypic.com/30vlwyf.jpg)
+
+ - Base View
+  - Fish_demo.png
+   - A fish image that the player sees
+  - tempDrawImage
+   - A UIImageView with class BitDrawImageView
