@@ -105,8 +105,8 @@ id(unique), duration, action_type, (Addtional params based on action_type)
 ```
 
 There are 9 action_type available (Addtional params follow):
-* "MoveBy" - x, y
 * "MoveTo" - x, y
+* "MoveBy" - x, y
 * "RotateTo" - degree
 * "RotateBy" - degree
 * "ScaleTo" - x, y
@@ -115,21 +115,64 @@ There are 9 action_type available (Addtional params follow):
 * "FadeIn"
 * "FadeOut"
 
+Example,
 ```
 [
     {
         "id": 1,
         "duration": 2.0,
-        "action_type": "MoveBy",
-        "x": 300.0,
-        "y": 300.0
+        "action_type": "MoveTo",
+        "x": 100.0,
+        "y": 200.0
     },
     {
         "id": 2,
         "duration": 2.0,
+        "action_type": "MoveBy",
+        "x": 100.0,
+        "y": 200.0
+    },
+    {
+        "id": 3,
+        "duration": 2.0,
+        "action_type": "RotateTo",
+        "degree": 90.0
+    },
+    {
+        "id": 4,
+        "duration": 2.0,
+        "action_type": "RotateBy",
+        "degree": 90.0
+    },
+    {
+        "id": 5,
+        "duration": 2.0,
+        "action_type": "ScaleTo",
+        "x": 2.0,
+        "y": 2.0
+    },
+    {
+        "id": 6,
+        "duration": 2.0,
         "action_type": "ScaleBy",
         "x": 2.0,
         "y": 2.0
+    },
+    {
+        "id": 7,
+        "duration": 2.0,
+        "action_type": "FadeTo",
+        "opacity": 255.0
+    },
+    {
+        "id": 8,
+        "duration": 2.0,
+        "action_type": "FadeIn"
+    },
+    {
+        "id": 9,
+        "duration": 2.0,
+        "action_type": "FadeOut"
     }
 ]
 
