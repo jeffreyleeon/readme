@@ -94,3 +94,43 @@ void SettingsScreen::onEnter() {
 }
 ```
 fairyTrigger with id 1 will be displayed in the above case
+
+#### Predefine actions in fairyActions.json
+
+fairyActions.json stores array of jsons defining Action objects</br>
+
+Required params:
+```
+id(unique), duration, action_type, (Addtional params based on action_type)
+```
+
+There are 9 action_type available (Addtional params follow):
+* "MoveBy" - x, y
+* "MoveTo" - x, y
+* "RotateTo" - degree
+* "RotateBy" - degree
+* "ScaleTo" - x, y
+* "ScaleBy" - x, y
+* "FadeTo" - opacity
+* "FadeIn"
+* "FadeOut"
+
+```
+[
+    {
+        "id": 1,
+        "duration": 2.0,
+        "action_type": "MoveBy",
+        "x": 300.0,
+        "y": 300.0
+    },
+    {
+        "id": 2,
+        "duration": 2.0,
+        "action_type": "ScaleBy",
+        "x": 2.0,
+        "y": 2.0
+    }
+]
+
+```
