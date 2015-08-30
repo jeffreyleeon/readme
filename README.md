@@ -33,7 +33,7 @@ FairyTrigger* trigger = new FairyTrigger(position, words, duration, nullptr);
 fairyLayer->runTrigger(trigger);
 ```
 
-#### Predefined triggers in fairyTriggers.json
+#### Predefine triggers in fairyTriggers.json
 
 fairyTriggers.json stores array of jsons defining fairyTrigger objects
 ```
@@ -75,3 +75,22 @@ fairyTrigger with id 2 will display a fairy in position (900.0, 150.0) saying "S
 fairyLayer->runTriggerWithId(1);
 fairyLayer->runTriggerWithId(2);
 ```
+
+#### Call triggers with key
+
+triggersKeyIdPair.json stores json with key, trigger id pairs.<br/>
+User can run trigger with key. (Beaware that trigger id must appear in fairyTriggers.json)
+```
+{
+    "SettingScreen::onEnter": 1,
+    "PenIntroduction::onEnter": 2
+}
+```
+In SettingScreen.m
+```
+void SettingsScreen::onEnter() {
+    Layer::onEnter();
+    fairyLayer->runTriggerWithKey("SettingScreen::onEnter");
+}
+```
+fairyTrigger with id 1 will be displayed in the above case
