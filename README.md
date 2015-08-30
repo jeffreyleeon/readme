@@ -58,8 +58,14 @@ fairyTriggers.json stores array of jsons defining fairyTrigger objects
 ]
 ```
 
-Required params: id(unique), x, y, words, duration <br/><br/>
-Optional params: actions, is_sequential, is_repeating <br/>
+Required params:
+```
+id(unique), x, y, words, duration
+```
+Optional params:
+```
+actions, is_sequential, is_repeating
+```
 (Optional params are all required if `actions` is needed)
 
 In the above case,<br/>
