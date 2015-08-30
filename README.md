@@ -13,7 +13,7 @@ addChild(fairyLayer, 1000);
 
 #### Call Fairy Guide with FairyTrigger object
 
-FairyLayer takes a FairyTrigger object to display fairy
+FairyLayer takes a FairyTrigger object to display fairy \n
 FairyTrigger takes 4 parameters
 
 * Vec2 position - 2D vector position of fairy on screen
