@@ -1,6 +1,6 @@
 ## Fairy System
 
-1. Include Fairy Layer
+#### Include Fairy Layer
 
 Add Fairy Layer to the top most of the scene that will use the fairy system
 
@@ -11,7 +11,7 @@ fairyLayer = FairyLayer::create();
 addChild(fairyLayer, 1000);
 ```
 
-2. Call Fairy Guide with FairyTrigger object
+#### Call Fairy Guide with FairyTrigger object
 
 FairyTrigger takes 4 parameters
 
