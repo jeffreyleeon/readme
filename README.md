@@ -68,6 +68,10 @@ actions, is_sequential, is_repeating
 ```
 (Optional params are all required if `actions` is needed)
 
-In the above case,<br/>
+In the below case,<br/>
 fairyTrigger with id 1 will display a fairy in position (0, 0) saying "First sentence".<br/>
 fairyTrigger with id 2 will display a fairy in position (900.0, 150.0) saying "Second sentence", stays 5.0 seconds.
+```
+fairyLayer->runTriggerWithId(1);
+fairyLayer->runTriggerWithId(2);
+```
