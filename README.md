@@ -58,14 +58,10 @@ fairyTriggers.json stores array of jsons defining fairyTrigger objects
 ]
 ```
 
-Required params: id(unique), x, y, words, duration
-
-Optional params: actions, is_sequential, is_repeating
-
+Required params: id(unique), x, y, words, duration <br/><br/>
+Optional params: actions, is_sequential, is_repeating <br/>
 (Optional params are all required if `actions` is needed)
 
-In the above case,
-
-fairyTrigger with id 1 will display a fairy in position (0, 0) saying "First sentence".
-
+In the above case,<br/>
+fairyTrigger with id 1 will display a fairy in position (0, 0) saying "First sentence".<br/>
 fairyTrigger with id 2 will display a fairy in position (900.0, 150.0) saying "Second sentence", stays 5.0 seconds.
