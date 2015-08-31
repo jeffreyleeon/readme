@@ -175,5 +175,49 @@ Example,
         "action_type": "FadeOut"
     }
 ]
+```
+
+There are 12 transitions available (Addtional params follow):
+
+* "EaseIn" - transition_period
+* "EaseOut" - transition_period
+* "EaseInOut" - transition_period
+* "EaseElasticIn" - transition_period
+* "EaseElasticOut" - transition_period
+* "EaseElasticInOut" - transition_period
+* "EaseBackIn"
+* "EaseBackOut"
+* "EaseBackInOut"
+* "EaseBounceIn"
+* "EaseBounceOut"
+* "EaseBounceInOut"
+
+Example,
+```
+[
+    {
+        "id": 1,
+        "duration": 2.0,
+        "action_type": "MoveTo",
+        "x": 100.0,
+        "y": 200.0,
+        "transition": "EaseElasticOut",
+        "transition_period": 0.5
+    },
+    {
+        "id": 2,
+        "duration": 2.0,
+        "action_type": "MoveBy",
+        "x": 100.0,
+        "y": 200.0
+        "transition": "EaseBounceOut"
+    },
+    {
+        "id": 3,
+        "duration": 2.0,
+        "action_type": "RotateTo",
+        "degree": 90.0
+    }
+]
 
 ```
